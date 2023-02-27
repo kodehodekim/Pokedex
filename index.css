@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@font-face {
+  font-family: Pokemon;
+  src: url(fonts/PokemonSolid.ttf);
+}
+@font-face {
+  font-family: PokemonHollow;
+  src: url(fonts/PokemonHollow.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: coral;
+  background: linear-gradient(
+    to right,
+    rgba(255, 254, 253, 0.74),
+    rgba(255, 96, 38, 0.74)
+  );
+}
+
+button:hover {
+  background: rgba(255, 254, 253, 0.74);
+}
+
+button:active {
+  background-color: rgba(255, 96, 38, 0.74);
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+body {
+  background: coral;
+  background: linear-gradient(
+    to right,
+    rgba(255, 254, 253, 0.74),
+    rgba(255, 96, 38, 0.74)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagecontainer {
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: Pokemon;
+  font-size: 60px;
+  border-bottom: solid 2px black;
+  border-left: solid 2px black;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 5px;
+  letter-spacing: 2px;
+}
+
+h4 {
+  letter-spacing: 3px;
+  left: 700px;
+  top: 120px;
+  font-family: Pokemon;
+  letter-spacing: 3px;
+  text-align: center;
+  position: absolute;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.pokemon:hover {
+  background-color: rgb(245, 187, 187);
+  transform: scale(1.2);
+  border: 3px black solid;
+}
+
+.pokemon {
+  background-color: #eee;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.pokemon .name {
+  margin: 15px 0 6px;
+}
+.name {
+  font-family: Pokemon;
+  text-decoration: underline 2px;
+  letter-spacing: 2px;
+}
+
+.number {
+  font-family: Pokemon;
+}
+
+.info {
+  font-family: Pokemon;
+}
